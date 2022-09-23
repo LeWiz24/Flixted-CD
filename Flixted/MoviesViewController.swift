@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
@@ -27,12 +28,19 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let description = movie["overview"]
         
-//        let description = movie["overview"]
+        let baseUrl = "https://image.tmdb.org/t/p/w185"
+        
+        let posterPath = movie["poster_path"] as! String
+        
+        let posterUrl = URL(string: baseUrl + posterPath)
+        
         
         // Prints this variable to each cell
         
         cell.titleLabel.text = title as? String
         cell.descriptionLabel.text = description as? String
+        
+        cell.posterView.af.setImage(withURL: posterUrl!)
         
         
         return cell

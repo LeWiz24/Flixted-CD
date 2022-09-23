@@ -14,6 +14,8 @@
 		400167D328DB937C0064FF77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400167D228DB937C0064FF77 /* Assets.xcassets */; };
 		400167D628DB937C0064FF77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400167D428DB937C0064FF77 /* LaunchScreen.storyboard */; };
 		400167DE28DCBC5A0064FF77 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400167DD28DCBC5A0064FF77 /* MovieCell.swift */; };
+		400167E128DCCE890064FF77 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 400167E028DCCE890064FF77 /* AlamofireImage */; };
+		95F7E8E3FD9B2FF44FBBDC50 /* Pods_Flixted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C7E3F4968F9A6D3225EA384 /* Pods_Flixted.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		400167D528DB937C0064FF77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		400167D728DB937C0064FF77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		400167DD28DCBC5A0064FF77 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		6C7E3F4968F9A6D3225EA384 /* Pods_Flixted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flixted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B164909AF7FDF66ED3D76F32 /* Pods-Flixted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixted.debug.xcconfig"; path = "Target Support Files/Pods-Flixted/Pods-Flixted.debug.xcconfig"; sourceTree = "<group>"; };
+		EF175A46153D68AC35FD6307 /* Pods-Flixted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flixted.release.xcconfig"; path = "Target Support Files/Pods-Flixted/Pods-Flixted.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400167E128DCCE890064FF77 /* AlamofireImage in Frameworks */,
+				95F7E8E3FD9B2FF44FBBDC50 /* Pods_Flixted.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				400167C828DB937B0064FF77 /* Flixted */,
 				400167C728DB937B0064FF77 /* Products */,
+				B6EBE8FBE80528A9F6FB651D /* Pods */,
+				68603D2DF0871AD845643F5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +79,24 @@
 			path = Flixted;
 			sourceTree = "<group>";
 		};
+		68603D2DF0871AD845643F5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C7E3F4968F9A6D3225EA384 /* Pods_Flixted.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6EBE8FBE80528A9F6FB651D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B164909AF7FDF66ED3D76F32 /* Pods-Flixted.debug.xcconfig */,
+				EF175A46153D68AC35FD6307 /* Pods-Flixted.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +104,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 400167DA28DB937C0064FF77 /* Build configuration list for PBXNativeTarget "Flixted" */;
 			buildPhases = (
+				EC6D166B2F1F71A9DF3E8AB7 /* [CP] Check Pods Manifest.lock */,
 				400167C228DB937B0064FF77 /* Sources */,
 				400167C328DB937B0064FF77 /* Frameworks */,
 				400167C428DB937B0064FF77 /* Resources */,
+				82B8857FF134572BB9948253 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Flixted;
+			packageProductDependencies = (
+				400167E028DCCE890064FF77 /* AlamofireImage */,
+			);
 			productName = Flixted;
 			productReference = 400167C628DB937B0064FF77 /* Flixted.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +146,9 @@
 				Base,
 			);
 			mainGroup = 400167BD28DB937B0064FF77;
+			packageReferences = (
+				400167DF28DCCE890064FF77 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 400167C728DB937B0064FF77 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +170,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82B8857FF134572BB9948253 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flixted/Pods-Flixted-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flixted/Pods-Flixted-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flixted/Pods-Flixted-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC6D166B2F1F71A9DF3E8AB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flixted-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		400167C228DB937B0064FF77 /* Sources */ = {
@@ -286,6 +363,7 @@
 		};
 		400167DB28DB937C0064FF77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B164909AF7FDF66ED3D76F32 /* Pods-Flixted.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +392,7 @@
 		};
 		400167DC28DB937C0064FF77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF175A46153D68AC35FD6307 /* Pods-Flixted.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -362,6 +441,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		400167DF28DCCE890064FF77 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		400167E028DCCE890064FF77 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 400167DF28DCCE890064FF77 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 400167BE28DB937B0064FF77 /* Project object */;
 }
