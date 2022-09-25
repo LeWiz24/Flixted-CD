@@ -35,11 +35,10 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let posterUrl = URL(string: baseUrl + posterPath)
         
         
-        // Prints this variable to each cell
+        // Prints title, overview and poster image
         
         cell.titleLabel.text = title as? String
         cell.descriptionLabel.text = description as? String
-        
         cell.posterView.af.setImage(withURL: posterUrl!)
         
         

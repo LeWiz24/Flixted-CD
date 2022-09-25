@@ -94,14 +94,61 @@
                     <view key="view" contentMode="scaleToFill" id="0Io-ws-2UQ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qar-KW-XrW" userLabel="BackdropView">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="307"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="0HS-uV-w5c"/>
+                                    <constraint firstAttribute="height" constant="307" id="Yu1-9X-aa5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbS-9g-NVp">
+                                <rect key="frame" x="139" y="315" width="249" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUs-qY-qU1" userLabel="Description">
+                                <rect key="frame" x="2" y="375" width="386" height="433"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n7D-ho-Zr5" userLabel="PosterView">
+                                <rect key="frame" x="0.0" y="245" width="137" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="1UA-Uk-aBL"/>
+                                    <constraint firstAttribute="width" constant="137" id="Bks-6e-KKs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dFd-5Z-sbg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qar-KW-XrW" firstAttribute="top" secondItem="0Io-ws-2UQ" secondAttribute="top" id="5lY-xK-ZQg"/>
+                            <constraint firstItem="rUs-qY-qU1" firstAttribute="leading" secondItem="dFd-5Z-sbg" secondAttribute="leading" constant="2" id="7yp-wg-ndR"/>
+                            <constraint firstItem="dFd-5Z-sbg" firstAttribute="trailing" secondItem="nbS-9g-NVp" secondAttribute="trailing" constant="2" id="8cB-qi-uDp"/>
+                            <constraint firstItem="dFd-5Z-sbg" firstAttribute="trailing" secondItem="rUs-qY-qU1" secondAttribute="trailing" constant="2" id="BrJ-zc-fsJ"/>
+                            <constraint firstItem="nbS-9g-NVp" firstAttribute="leading" secondItem="n7D-ho-Zr5" secondAttribute="trailing" constant="2" id="E8c-c9-om4"/>
+                            <constraint firstItem="dFd-5Z-sbg" firstAttribute="bottom" secondItem="rUs-qY-qU1" secondAttribute="bottom" constant="2" id="H5s-MS-8Tf"/>
+                            <constraint firstItem="rUs-qY-qU1" firstAttribute="top" secondItem="n7D-ho-Zr5" secondAttribute="bottom" constant="2" id="IxC-Ak-AkR"/>
+                            <constraint firstItem="nbS-9g-NVp" firstAttribute="top" secondItem="Qar-KW-XrW" secondAttribute="bottom" constant="8" id="a4j-y5-Ya4"/>
+                            <constraint firstItem="n7D-ho-Zr5" firstAttribute="leading" secondItem="dFd-5Z-sbg" secondAttribute="leading" id="cD0-5q-1hV"/>
+                            <constraint firstItem="n7D-ho-Zr5" firstAttribute="top" secondItem="dFd-5Z-sbg" secondAttribute="top" constant="154" id="rXD-gp-Wdw"/>
+                            <constraint firstItem="Qar-KW-XrW" firstAttribute="leading" secondItem="dFd-5Z-sbg" secondAttribute="leading" id="yie-JH-wZR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JN1-fw-Mrx"/>
+                    <connections>
+                        <outlet property="backdropView" destination="Qar-KW-XrW" id="1k1-xL-uG8"/>
+                        <outlet property="descriptionLabel" destination="rUs-qY-qU1" id="kX0-kK-kIF"/>
+                        <outlet property="posterView" destination="n7D-ho-Zr5" id="CbQ-9N-OBF"/>
+                        <outlet property="titleLabel" destination="nbS-9g-NVp" id="lBw-Fw-B3h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3EA-Fs-I1y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1943" y="-28"/>
+            <point key="canvasLocation" x="1941.5384615384614" y="-28.436018957345969"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4ye-v9-23W">
