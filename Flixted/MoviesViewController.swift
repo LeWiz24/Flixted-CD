@@ -53,8 +53,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("Hello World")
+       
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -75,14 +74,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                  self.movies = dataDictionary["results"] as! [[String: Any]]
                  
                  self.tableView.reloadData()
-                 print(dataDictionary)
-                 
-                 
-                 
-                    // TODO: Get the array of movies
-                    // TODO: Store the movies in a property to use elsewhere
-                    // TODO: Reload your table view data
-
              }
         }
         task.resume()
@@ -90,7 +81,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        print("Loading the next page")
         
         // Find the selecte movie
         let cell = sender as! UITableViewCell
