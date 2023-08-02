@@ -1,7 +1,3 @@
-# Group Project Brainstorming
-
-https://hackmd.io/GO5mwVNlQD2wx4rQDqepMA
-
 # Flixted-
 
 Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
