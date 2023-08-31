@@ -18,6 +18,13 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 [Watch the video here](https://www.loom.com/share/02b5e523d6224fc4b522e9bdc3aa5aec?sid=90a0fb7a-dae3-4a48-b5b4-fb47f8292715)'
 
+<div>
+    <a href="https://www.loom.com/share/45f0d5c10d0948bb95536fe798d76985">
+    </a>
+    <a href="https://www.loom.com/share/45f0d5c10d0948bb95536fe798d76985">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/45f0d5c10d0948bb95536fe798d76985-with-play.gif">
+    </a>
+  </div>
 
 [![Watch the video](https://github.com/lewiz24/flixted-CD/)](https://www.loom.com/share/your-video-id)
 
