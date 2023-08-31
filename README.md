@@ -21,5 +21,6 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 
 
+[![Watch the video](https://github.com/lewiz24/flixted-CD/)](https://www.loom.com/share/your-video-id)
 
 
